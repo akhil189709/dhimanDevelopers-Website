@@ -122,7 +122,14 @@ const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-10 mt-10 border-t border-slate-800 text-center text-slate-400">
-          <p>Designed By The Digital Marketing Solutions</p>
+          <a
+            href="https://thedmsolutions.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-amber-500 transition-colors"
+          >
+            Designed By The Digital Marketing Solutions
+          </a>
         </div>
       </div>
     </footer>
