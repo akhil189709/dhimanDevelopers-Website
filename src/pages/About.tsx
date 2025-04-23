@@ -15,14 +15,14 @@ const About: React.FC = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pb-32 bg-slate-900">
         <div className="absolute inset-0 z-0 opacity-30">
-          <img 
-            src="https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-            alt="Architecture blueprint" 
+          <img
+            src="https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Architecture blueprint"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -30,13 +30,13 @@ const About: React.FC = () => {
           >
             About <span className="text-amber-500">Dhiman Developers</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl text-slate-300 max-w-3xl mx-auto"
           >
-            Building excellence and creating landmarks since 2010
+            Building excellence and creating landmarks since 2020
           </motion.p>
         </div>
       </section>
@@ -45,43 +45,43 @@ const About: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               className="relative"
             >
-              <img 
-                src="https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Office building" 
+              <img
+                src="https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Office building"
                 className="w-full rounded-lg shadow-xl"
               />
-              <div className="absolute -bottom-6 -right-6 p-4 bg-white shadow-lg rounded-lg w-40 md:w-60 hidden md:block">
+              {/* <div className="absolute -bottom-6 -right-6 p-4 bg-white shadow-lg rounded-lg w-40 md:w-60 hidden md:block">
                 <p className="text-amber-600 font-bold">ESTABLISHED</p>
-                <p className="text-3xl font-bold text-slate-900">2010</p>
-              </div>
+                <p className="text-3xl font-bold text-slate-900">2020</p>
+              </div> */}
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <SectionTitle 
-                title="Our Story" 
+              <SectionTitle
+                title="Our Story"
                 subtitle="At Dhiman Developers, we don't just build structures—we shape the future."
               />
-              
+
               <p className="text-slate-600 mb-6">
                 With a legacy of excellence and a vision for innovation, we create landmark spaces that redefine modern living and working. From premium residential communities to cutting-edge commercial developments, our projects are crafted with precision, sustainability, and an unwavering commitment to quality.
               </p>
-              
+
               <p className="text-slate-600 mb-6">
                 Every structure we build is designed to inspire, connect, and stand the test of time. Driven by integrity and a passion for excellence, Dhiman Developers is dedicated to delivering not just spaces, but experiences that enhance lives and drive progress.
               </p>
-              
+
               <div className="flex gap-4 flex-wrap mt-8">
                 <Button to="/projects" icon>
                   View Our Projects
@@ -98,14 +98,14 @@ const About: React.FC = () => {
       {/* Vision & Mission */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
-          <SectionTitle 
-            title="Vision & Mission" 
+          <SectionTitle
+            title="Vision & Mission"
             subtitle="Our guiding principles that drive us to excellence"
             center
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -120,8 +120,8 @@ const About: React.FC = () => {
                 To be the most trusted and innovative construction and development company, creating spaces that inspire and enrich communities globally while setting new standards in quality, sustainability, and architectural excellence.
               </p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -143,12 +143,12 @@ const About: React.FC = () => {
       {/* Stats Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <SectionTitle 
-            title="Our Journey in Numbers" 
+          <SectionTitle
+            title="Our Journey in Numbers"
             subtitle="A testament to our commitment and excellence in the construction industry"
             center
           />
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
             {[
               {
@@ -176,11 +176,11 @@ const About: React.FC = () => {
                 delay: 0.4
               }
             ].map((stat, index) => (
-              <StatCard 
-                key={index} 
-                icon={stat.icon} 
-                value={stat.value} 
-                label={stat.label} 
+              <StatCard
+                key={index}
+                icon={stat.icon}
+                value={stat.value}
+                label={stat.label}
                 delay={stat.delay}
               />
             ))}
@@ -191,13 +191,13 @@ const About: React.FC = () => {
       {/* Core Values */}
       <section className="py-20 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
-          <SectionTitle 
-            title="Our Core Values" 
+          <SectionTitle
+            title="Our Core Values"
             subtitle="The principles that guide our work and relationships"
             center
             light
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {[
               {
@@ -237,7 +237,7 @@ const About: React.FC = () => {
                 delay: 0.6
               }
             ].map((value, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -259,12 +259,12 @@ const About: React.FC = () => {
       {/* Team Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <SectionTitle 
-            title="Our Leadership Team" 
+          <SectionTitle
+            title="Our Leadership Team"
             subtitle="Meet the experienced professionals leading Dhiman Developers"
             center
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
             {[
               {
@@ -292,7 +292,7 @@ const About: React.FC = () => {
                 delay: 0.4
               }
             ].map((member, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -301,9 +301,9 @@ const About: React.FC = () => {
                 className="group"
               >
                 <div className="relative overflow-hidden rounded-lg shadow-lg mb-4">
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
+                  <img
+                    src={member.image}
+                    alt={member.name}
                     className="w-full aspect-square object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-70"></div>
@@ -322,7 +322,7 @@ const About: React.FC = () => {
       <section className="py-20 bg-amber-600">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -331,7 +331,7 @@ const About: React.FC = () => {
             >
               Ready to Build Your Dream Project?
             </motion.h2>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -340,7 +340,7 @@ const About: React.FC = () => {
             >
               Contact us today to discuss your vision. We'll bring it to life with excellence and precision.
             </motion.p>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
