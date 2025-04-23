@@ -71,8 +71,8 @@ const Projects: React.FC = () => {
                   key={category}
                   onClick={() => setActiveCategory(category)}
                   className={`px-4 py-2 rounded-md transition-all font-medium shadow-sm ${activeCategory === category
-                      ? 'bg-amber-600 text-white'
-                      : 'bg-transparent text-slate-700 hover:bg-slate-200'
+                    ? 'bg-amber-600 text-white'
+                    : 'bg-transparent text-slate-700 hover:bg-slate-200'
                     }`}
                 >
                   {category}
@@ -105,7 +105,7 @@ const Projects: React.FC = () => {
             center
           />
 
-          <div className="relative mt-20">
+          <div className="relative mt-10">
             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-amber-200 transform -translate-x-1/2"></div>
 
             {[
@@ -152,9 +152,9 @@ const Projects: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: step.delay }}
-                className={`relative mb-12 md:mb-24 ${index % 2 === 0
-                    ? 'md:text-right md:pr-12 md:mr-auto'
-                    : 'md:text-left md:pl-12 md:ml-auto'
+                className={`relative mb-8 md:mb-16 ${index % 2 === 0
+                  ? 'md:text-right md:pr-12 md:mr-auto'
+                  : 'md:text-left md:pl-12 md:ml-auto'
                   } max-w-md`}
               >
                 <div

@@ -33,7 +33,7 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${scrolled
-          ? 'bg-slate-800/70 backdrop-blur-xl border-b border-white/20 shadow-md py-3'
+          ? 'bg-slate-700/70 backdrop-blur-md border-b border-white/20 shadow-md py-3'
           : 'bg-transparent py-6'
         }`}
     >

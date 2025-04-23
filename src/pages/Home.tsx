@@ -37,7 +37,7 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6"
             >
-              Building <span className="text-amber-500">Excellence</span>, Creating <span className="text-amber-500">Landmarks</span>
+              Building <span className="text-amber-500">Excellence</span> Creating <span className="text-amber-500">Landmarks</span>
             </motion.h1>
 
             <motion.p
@@ -139,7 +139,7 @@ const Home: React.FC = () => {
               />
               <div className="absolute -bottom-10 -left-10 bg-amber-600 p-6 rounded-lg shadow-lg hidden md:block">
                 <div className="text-white text-center">
-                  <h3 className="font-bold text-3xl mb-1">150+</h3>
+                  <h3 className="font-bold text-3xl mb-1">50+</h3>
                   <p className="uppercase tracking-wider text-sm">Projects Completed</p>
                 </div>
               </div>

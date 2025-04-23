@@ -107,10 +107,10 @@ const Footer: React.FC = () => {
               <li className="flex items-center gap-3">
                 <Phone size={20} className="text-amber-500 flex-shrink-0" />
                 <a href="tel:+91999457050" className="text-slate-300 hover:text-amber-500 transition-colors">
-                  +91 99945 7050
+                  +91 99994 57050
                 </a>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-2">
                 <Mail size={20} className="text-amber-500 flex-shrink-0" />
                 <a href="mailto:akshay@dhimandevelopers.com" className="text-slate-300 hover:text-amber-500 transition-colors">
                   akshay@dhimandevelopers.com
